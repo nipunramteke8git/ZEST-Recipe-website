@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEST</title>
+    <link rel="icon" type="image/png" href="assets/images/pepper-icon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/about.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("nipun.ramteke16524@sakec.ac.in");
+        })();
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <!--Navigation Bar-->
+
+        <nav class="navbar navbar-light navbar-expand-md fixed-top">
+            <a href="index.html" class="navbar-brand logo">ZEST</a>
+
+            <button class="navbar-toggler ml-auto" id="tog-btn" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                <ul class="navbar-nav topnav-right ml-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="recipe.html">Recipes</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <!--BODY--->
+
+    <section class="contact-page-form">
+        <div class="container-fluid">
+            <div class="row bg-img-contact">
+                <div class="col">
+
+                    <div class="contact-heading">
+                        <h3>Contact us!</h3>
+                        <p>Get in touch with us with any questions and recipe ideas. We love to hear your ideas and what
+                            you think
+                            of the the available recipes so we can make sure you always find some delicious ideas on
+                            ZEST!
+                        </p>
+                    </div>
+                    <div class="contact-form">
+
+
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name"
+                                required />
+                            <input type="email" name="emailaddress" class="form-control" id="emailaddress"
+                                placeholder="Email" required />
+                            <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
+                                placeholder="We are hungry to know what is on your mind..." required></textarea>
+                            <button type="submit" class="btn btn-secondary center-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="assets/js/contact.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</html>
